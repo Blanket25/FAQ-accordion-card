@@ -63,6 +63,11 @@ section div {
   margin: 1rem 0;
 }
 
+.question:is(:hover, :focus) {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
 .btn {
   cursor: pointer;
 }
