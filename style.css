@@ -1,0 +1,163 @@
+/*General*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  color: hsl(240, 6%, 50%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem;
+}
+
+h1 {
+  color: hsl(237, 12%, 33%);
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/*Card*/
+
+.icon {
+  position: fixed;
+  top: 5%;
+  left: 10%;
+}
+
+.desktop-icon {
+  display: none;
+}
+
+.shadow {
+  position: fixed;
+  top: 22%;
+  left: 18%;
+}
+
+.main-content {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 9rem auto;
+  margin-bottom: 0;
+  padding: 3rem 2rem;
+  width: 80%;
+}
+
+section {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+section div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/*Javascript classes*/
+
+.bold {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+}
+
+.answer {
+  display: none;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.active {
+  display: block;
+}
+
+.animation {
+  transform: rotate(-180deg);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  .shadow {
+    left: 14%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-content {
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0;
+  }
+
+  .icon,
+  .shadow {
+    display: none;
+  }
+
+  .desktop-icon {
+    align-items: center;
+    display: flex;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-position: top -15rem right 5rem;
+    background-repeat: no-repeat;
+  }
+
+  .desktop-icon img:first-child {
+    margin-top: 5rem;
+    margin-left: -6rem;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .desktop-icon img:last-child {
+    margin-left: -10rem;
+  }
+
+  .desktop-icon,
+  .content {
+    width: 50%;
+  }
+
+  .content {
+    padding: 3rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .desktop-icon {
+    background-position-x: -35rem;
+  }
+
+  .content {
+    padding-left: 0;
+    padding-right: 5rem;
+  }
+}
